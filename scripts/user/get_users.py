@@ -1,8 +1,6 @@
-import boto3
 import json
+from scripts.clients import iam
 
-# Create an IAM client
-iam = boto3.client('iam')
 
 def get_all_users():
     """Get all IAM users and return them as a list of dictionaries."""
